@@ -1,7 +1,9 @@
 package Strategy;
 import java.lang.Math; 
 
-public class Geometrica implements ICalMedia () {
+public class Geometrica implements ICalMedia {
+
+    private static final int Media = 0;
 
       public double Geometrica (double a, double b) {
 

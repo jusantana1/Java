@@ -9,11 +9,13 @@ public class Disciplina {
     private double b;
     private String situacao;
 
+    public Disciplina(Aritmetica calculo) {
+    }
     public ICalMedia getCalMedia() {
         return CalMedia;
     }
     public void setCalMedia(ICalMedia CalMedia) {
-        calculomedia = CalMedia;
+        CalMedia = ICalMedia;
     }
 
     public double getA() {
@@ -32,12 +34,20 @@ public class Disciplina {
         this.b = b;
     }
 
+    public double getMedia() {
+        return Media;
+    }
+
+    public void setMedia(int Media) {
+        this.Media = Media;
+    }
+
     public void setNome(String nome) {
         this.Nome = Nome;
     }
 
     public String getNome() {
-        return nome;
+        return Nome;
     }
 
     public void setSituacao(String situacao) {
