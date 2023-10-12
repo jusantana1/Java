@@ -12,10 +12,14 @@ public class Disciplina {
     public Disciplina(Aritmetica calculo) {
     }
     public ICalMedia getCalMedia() {
-        return CalMedia;
+       return CalMedia;
+    }
+
+    public Disciplina (ICalMedia CalMedia){
+        this.CalMedia = CalMedia;
     }
     public void setCalMedia(ICalMedia CalMedia) {
-        CalMedia = ICalMedia;
+        this.CalMedia = CalMedia;
     }
 
     public double getA() {
@@ -43,7 +47,7 @@ public class Disciplina {
     }
 
     public void setNome(String nome) {
-        this.Nome = Nome;
+        this.Nome = nome;
     }
 
     public String getNome() {
@@ -58,7 +62,7 @@ public class Disciplina {
         return situacao;
     }
 
-    public double Calcular()
+    public double calcular()
     {
         return this.CalMedia.calcular(this.a, this.b);
     }

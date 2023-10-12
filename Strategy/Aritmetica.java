@@ -2,22 +2,18 @@ package Strategy;
 
 public class Aritmetica implements ICalMedia {
 
-    private static final int Media = 0;
-
-    public double Aritmetica (double a, double b) {
-
-        double Media = a+b/2;
-
+    public double Calcular(double a, double b) {
+        double Media = (a + b) / 2;
         return Media;
     }
 
-    public String situacao() {
+    public String Situacao(double Media) {  
+        return (media >= 5) ? "Aprovado" : "Reprovado";
+    }
 
-        If(Media >= 5 ) {
-            System.out.println("Aluno Aprovado");
-        } else {
-             System.out.println("Aluno Reprovado"); 
-        }
+
+    public String situacao(double Media) {
+        throw new UnsupportedOperationException("Unimplemented method 'situacao'");
     }
 
 }
